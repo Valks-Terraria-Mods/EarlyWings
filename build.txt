@@ -1,4 +1,4 @@
 author = valkyrienyanko
-version = 1.0
+version = 1.0.1
 displayName = Early Wings
 homepage = https://discord.gg/thMupbv

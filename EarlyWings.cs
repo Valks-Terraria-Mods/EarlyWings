@@ -1,53 +1,47 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace EarlyWings
+namespace EarlyWings;
+
+public class EarlyWings : Mod
 {
-	class EarlyWings : Mod
-	{
-		public EarlyWings()
-		{
-		}
+    public override void AddRecipes()
+    {
+        AddAngelWings();
+        AddCenxsWings();
+        AddJimsWings();
+    }
 
-        public override void AddRecipes()
-        {
-            addAngelWings();
-            addCenxsWings();
-            addJimsWings();
-        }
+    private void AddAngelWings()
+    {
+        CreateRecipe(ItemID.AngelWings)
+            .AddIngredient(ItemID.Feather, 25)
+            .AddIngredient(ItemID.Cloud, 10)
+            .AddIngredient(ItemID.SunplateBlock, 2)
+            .AddIngredient(ItemID.FeatherfallPotion)
+            .AddTile(TileID.WorkBenches)
+            .Register();
+    }
 
-        private void addAngelWings()
-        {
-            ModRecipe recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.Feather, 25);
-            recipe.AddIngredient(ItemID.Cloud, 10);
-            recipe.AddIngredient(ItemID.SunplateBlock, 2);
-            recipe.AddIngredient(ItemID.FeatherfallPotion);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(ItemID.AngelWings);
-            recipe.AddRecipe();
-        }
+    private void AddCenxsWings()
+    {
+        CreateRecipe(ItemID.CenxsWings)
+            .AddIngredient(ItemID.Feather, 25)
+            .AddIngredient(ItemID.Obsidian, 10)
+            .AddIngredient(ItemID.Hellstone, 2)
+            .AddIngredient(ItemID.FeatherfallPotion)
+            .AddTile(TileID.WorkBenches)
+            .Register();
+    }
 
-        private void addCenxsWings() {
-            ModRecipe recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.Feather, 25);
-            recipe.AddIngredient(ItemID.Obsidian, 10);
-            recipe.AddIngredient(ItemID.Hellstone, 2);
-            recipe.AddIngredient(ItemID.FeatherfallPotion);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(ItemID.CenxsWings);
-            recipe.AddRecipe();
-        }
-
-        private void addJimsWings() {
-            ModRecipe recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.Feather, 25);
-            recipe.AddIngredient(ItemID.MoonglowSeeds, 10);
-            recipe.AddIngredient(ItemID.DeathweedSeeds, 2);
-            recipe.AddIngredient(ItemID.GravitationPotion);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(ItemID.JimsWings);
-            recipe.AddRecipe();
-        }
+    private void AddJimsWings()
+    {
+        CreateRecipe(ItemID.JimsWings)
+            .AddIngredient(ItemID.Feather, 25)
+            .AddIngredient(ItemID.MoonglowSeeds, 10)
+            .AddIngredient(ItemID.DeathweedSeeds, 2)
+            .AddIngredient(ItemID.GravitationPotion)
+            .AddTile(TileID.WorkBenches)
+            .Register();
     }
 }

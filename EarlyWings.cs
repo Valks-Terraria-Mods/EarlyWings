@@ -1,3 +1,4 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -12,36 +13,27 @@ public class EarlyWings : Mod
         AddJimsWings();
     }
 
-    private void AddAngelWings()
-    {
-        CreateRecipe(ItemID.AngelWings)
+    static void AddAngelWings() => _ = Recipe.Create(ItemID.AngelWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.Cloud, 10)
             .AddIngredient(ItemID.SunplateBlock, 2)
             .AddIngredient(ItemID.FeatherfallPotion)
             .AddTile(TileID.WorkBenches)
             .Register();
-    }
 
-    private void AddCenxsWings()
-    {
-        CreateRecipe(ItemID.CenxsWings)
+    static void AddCenxsWings() => _ = Recipe.Create(ItemID.CenxsWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.Obsidian, 10)
             .AddIngredient(ItemID.Hellstone, 2)
             .AddIngredient(ItemID.FeatherfallPotion)
             .AddTile(TileID.WorkBenches)
             .Register();
-    }
 
-    private void AddJimsWings()
-    {
-        CreateRecipe(ItemID.JimsWings)
+    static void AddJimsWings() => _ = Recipe.Create(ItemID.JimsWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.MoonglowSeeds, 10)
             .AddIngredient(ItemID.DeathweedSeeds, 2)
             .AddIngredient(ItemID.GravitationPotion)
             .AddTile(TileID.WorkBenches)
             .Register();
-    }
 }

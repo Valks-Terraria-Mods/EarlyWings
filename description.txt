@@ -1,3 +1,5 @@
 Allows you to craft 3 hardmode wings in prehardmode.
 
+Discord for suggestions and support: https://discord.gg/j8HQZZ76r8
+
 For recipes please see https://github.com/Valks-Terraria-Mods/EarlyWings

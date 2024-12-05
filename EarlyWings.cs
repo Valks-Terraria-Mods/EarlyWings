@@ -4,16 +4,22 @@ using Terraria.ModLoader;
 
 namespace EarlyWings;
 
-public class EarlyWings : Mod
+public class EarlyWings : ModSystem
 {
     public override void AddRecipes()
     {
+        AddFledglingWings();
         AddAngelWings();
         AddCenxsWings();
         AddJimsWings();
     }
 
-    static void AddAngelWings() => _ = Recipe.Create(ItemID.AngelWings)
+    private static void AddFledglingWings() => _ = Recipe.Create(ItemID.CreativeWings)
+            .AddIngredient(ItemID.Feather, 25)
+            .AddTile(TileID.WorkBenches)
+            .Register();
+
+    private static void AddAngelWings() => _ = Recipe.Create(ItemID.AngelWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.Cloud, 10)
             .AddIngredient(ItemID.SunplateBlock, 2)
@@ -21,7 +27,7 @@ public class EarlyWings : Mod
             .AddTile(TileID.WorkBenches)
             .Register();
 
-    static void AddCenxsWings() => _ = Recipe.Create(ItemID.CenxsWings)
+    private static void AddCenxsWings() => _ = Recipe.Create(ItemID.CenxsWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.Obsidian, 10)
             .AddIngredient(ItemID.Hellstone, 2)
@@ -29,7 +35,7 @@ public class EarlyWings : Mod
             .AddTile(TileID.WorkBenches)
             .Register();
 
-    static void AddJimsWings() => _ = Recipe.Create(ItemID.JimsWings)
+    private static void AddJimsWings() => _ = Recipe.Create(ItemID.JimsWings)
             .AddIngredient(ItemID.Feather, 25)
             .AddIngredient(ItemID.MoonglowSeeds, 10)
             .AddIngredient(ItemID.DeathweedSeeds, 2)

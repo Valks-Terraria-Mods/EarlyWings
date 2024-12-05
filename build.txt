@@ -1,4 +1,4 @@
 author = valkyrienyanko
-version = 2.0.0
+version = 2.0.1
 displayName = Early Wings
-homepage = https://github.com/Valks-Terraria-Mods/EarlyWings
+homepage = https://discord.gg/j8HQZZ76r8

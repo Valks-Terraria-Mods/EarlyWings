@@ -3,6 +3,8 @@
 Allows you to craft 3 hardmode wings in prehardmode.
 
 ### Recipes
+- Fledgling Wings: ![i:320](https://gamepedia.cursecdn.com/terraria_gamepedia/3/33/Feather.png?version=62b06ea7c2978b53b1b9274d1380ece0) 25 Feather
+
 - ![i:493](https://gamepedia.cursecdn.com/terraria_gamepedia/6/6f/Angel_Wings.png?version=01ace05cfe905c060b8f59937435f4d0) Angel Wings: 
 ![i:320](https://gamepedia.cursecdn.com/terraria_gamepedia/3/33/Feather.png?version=62b06ea7c2978b53b1b9274d1380ece0) 25 Feather,
 ![i:751](https://gamepedia.cursecdn.com/terraria_gamepedia/d/d2/Cloud.png?version=3979a5b26df1e6a58825ebfe46bdf42d) 10 Cloud,
